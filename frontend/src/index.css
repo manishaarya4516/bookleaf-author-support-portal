@@ -1,0 +1,141 @@
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1c2736;
+  background: #f6f8fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #edf3ff, #f8fafc 55%, #e7efff);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 18px;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #e8eeff;
+  color: #345de3;
+  font-size: 25px;
+}
+
+.demo-hint {
+  background: #f6f8fc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 245px;
+  flex-shrink: 0;
+  background: #17233d;
+  color: #fff;
+  padding: 25px 15px;
+  position: relative;
+}
+
+.sidebar-brand {
+  font-size: 24px;
+  font-weight: 750;
+  padding: 4px 12px 35px;
+}
+
+.sidebar-caption {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #9aa9c5;
+  padding: 0 12px 12px;
+}
+
+.nav-button {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  text-align: left;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #cbd5e5;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  background: #2d426d;
+  color: #fff;
+}
+
+.sidebar-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  right: 15px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 35px;
+  background: #f6f8fc;
+}
+
+.stat-card,
+.book-card {
+  border: 1px solid #e7ebf2;
+  border-radius: 13px;
+  box-shadow: 0 2px 12px rgba(23, 35, 61, 0.03);
+}
+
+.stat-card h2 {
+  color: #254ec8;
+}
+
+.btn-primary {
+  background: #345de3;
+  border-color: #345de3;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .sidebar-brand {
+    padding-bottom: 15px;
+  }
+
+  .sidebar-bottom {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .main-content {
+    padding: 20px 15px;
+  }
+}
