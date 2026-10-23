@@ -2,8 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify
-
+from flask import Flask, jsonify, send_from_directory
 from app.models import db
 
 load_dotenv()
